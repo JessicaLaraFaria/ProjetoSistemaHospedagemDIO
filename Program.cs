@@ -29,7 +29,6 @@ namespace ProjetoSistemaHospedagem
             int diasReservados = int.Parse(Console.ReadLine());
 
             Reserva reserva = new Reserva(diasReservados);
-            //reserva.CadastrarSuite(suite);
             reserva.CadastrarHospedes(tipoSuite, hospedes);
 
             Console.WriteLine($"\nHóspedes:  {reserva.ObterQuantidadeHospedes()}");
